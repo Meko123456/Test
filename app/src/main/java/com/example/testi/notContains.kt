@@ -18,7 +18,7 @@ private fun notContains(x: Array<Int>, n: Int): Int  {
             return  0
         }
         z++
-        mySet.remove(0)
+        mySet.remove(mySet.first())
     }
     return z
 }
