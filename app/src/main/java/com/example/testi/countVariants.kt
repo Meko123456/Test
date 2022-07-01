@@ -12,7 +12,6 @@ private fun countVariants(n: Int): Int {
     }else{
         countVariants(n - 2) + countVariants(n - 1)
     }
-
 }
 fun main (){
 
