@@ -16,16 +16,11 @@ private fun notContains(x: Array<Int>, n: Int): Int  {
         if (!mySet.contains(i)){
             z = i
             return z
+        }else{
+            z++
         }
     }
-    /*while (mySet.isNotEmpty()){
-        if (z != mySet.first() && !mySet.contains(1)) {
-            println(z)
-            return  0
-        }
-        z++
-        mySet.remove(mySet.first())
-    }*/
+
     return z
 }
 
