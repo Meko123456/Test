@@ -8,23 +8,23 @@ Boolean isProperly(String sequence);
 მაგ: (()()) სწორი მიმდევრობაა,  ())() არასწორია*/
 
 
-private fun isProperly(m: String): Boolean {
+private fun isProperly(sequence: String): Boolean {
 
-    val c: Int = m.length
+    val c: Int = sequence.length
     val myStack = ArrayDeque<Char>()
     if (c % 2 == 1) {
         return false
     }
     for (i in 0 until c) {
-        if (m[i] == ')'){
+        if (sequence[i] == ')'){
             if (myStack.isEmpty()){
                 return false
             }
         }
-        if (m[i] == '(') {
-            myStack.push(m[i])
+        if (sequence[i] == '(') {
+            myStack.push(sequence[i])
         }
-        if (myStack.isNotEmpty() && (myStack.peek() == '(' && m[i] == ')')){
+        if (myStack.isNotEmpty() && (myStack.peek() == '(' && sequence[i] == ')')){
             myStack.pop()
             }
         }

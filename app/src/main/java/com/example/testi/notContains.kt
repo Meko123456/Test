@@ -10,11 +10,11 @@ Int notContains(Int[] array);*/
 
 val mySet = mutableSetOf<Int>()
 
-private fun notContains(x: Array<Int>): Int  {
+private fun notContains(array: Array<Int>): Int  {
 
     var z = 1
 
-    for (element in x) {
+    for (element in array) {
         mySet.add(element)
     }
 

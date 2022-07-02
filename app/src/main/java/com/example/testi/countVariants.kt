@@ -8,14 +8,14 @@ import java.util.*
 Int countVariants(Int stearsCount);*/
 
 
-private fun countVariants(n: Int): Int {
+private fun countVariants(stearsCount: Int): Int {
 
-    return if (n == 0) {
+    return if (stearsCount == 0) {
         1
-    }else if (n < 0){
+    }else if (stearsCount < 0){
         0
     }else{
-        countVariants(n - 2) + countVariants(n - 1)
+        countVariants(stearsCount - 2) + countVariants(stearsCount - 1)
     }
 }
 fun main (){
