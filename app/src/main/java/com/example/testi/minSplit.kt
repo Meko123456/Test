@@ -11,7 +11,7 @@ private fun minSplit(x: Long): Int  {
 
     var z = x
     val xurda = arrayOf( 1,5,10,20,50 )
-    var indexi = 4
+    var indexi = xurda.size-1
     var sum = 0
 
     while (z > 0){
