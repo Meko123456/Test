@@ -3,6 +3,11 @@ package com.example.testi
 import java.util.*
 
 
+/*5.     გვაქვს n სართულიანი კიბე, ერთ მოქმედებაში შეგვიძლია ავიდეთ 1 ან 2 საფეხურით.
+დაწერეთ ფუნქცია რომელიც დაითვლის n სართულზე ასვლის ვარიანტების რაოდენობას.
+Int countVariants(Int stearsCount);*/
+
+
 private fun countVariants(n: Int): Int {
 
     return if (n == 0) {

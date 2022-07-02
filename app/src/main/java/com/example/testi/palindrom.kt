@@ -1,5 +1,9 @@
 package com.example.testi
 
+/*1.     დაწერეთ ფუნქცია, რომელსაც გადაეცემა ტექსტი  და
+აბრუნებს პალინდრომია თუ არა. (პალინდრომი არის ტექსტი რომელიც
+ერთნაირად იკითხება ორივე მხრიდან).
+Boolean isPalindrome(String text);*/
 
 private fun isPalindrome(x: String): Boolean {
 

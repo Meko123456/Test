@@ -2,6 +2,11 @@ package com.example.testi
 
 import java.util.*
 
+/*4.     მოცემულია String რომელიც შედგება „(„ და „)“ ელემენტებისგან.
+დაწერეთ ფუნქცია რომელიც აბრუნებს ფრჩხილები არის თუ არა მათემატიკურად სწორად დასმული.
+Boolean isProperly(String sequence);
+მაგ: (()()) სწორი მიმდევრობაა,  ())() არასწორია*/
+
 
 private fun isProperly(m: String): Boolean {
 
