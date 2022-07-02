@@ -12,14 +12,20 @@ private fun notContains(x: Array<Int>, n: Int): Int  {
         mySet.add(x[i])
     }
 
-    while (mySet.isNotEmpty()){
-        if (z != mySet.first()) {
+    for (i in 1 .. mySet.last()){
+        if (!mySet.contains(i)){
+            z = i
+            return z
+        }
+    }
+    /*while (mySet.isNotEmpty()){
+        if (z != mySet.first() && !mySet.contains(1)) {
             println(z)
             return  0
         }
         z++
         mySet.remove(mySet.first())
-    }
+    }*/
     return z
 }
 
@@ -32,7 +38,7 @@ fun main (){
 
     val arrayint = Array<Int>(x) { readLine()!!.toInt() }
 
-    notContains(arrayint, x )
+    println(notContains(arrayint, x ))
 
 
 }
