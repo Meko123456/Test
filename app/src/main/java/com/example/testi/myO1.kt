@@ -7,7 +7,6 @@ import java.lang.IndexOutOfBoundsException
 
 class merabaList {
 
-
     class CustomList<T>: Iterable<T> {
         private var deque = ArrayDeque<T>()
 
