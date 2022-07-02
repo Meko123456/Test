@@ -7,7 +7,7 @@ import java.util.*
 აბრუნებს მონეტების მინიმალურ რაოდენობას, რომლითაც შეგვიძლია ეს თანხა დავახურდაოთ.
 Int minSplit(Int amount);*/
 
-private fun minSplit(x: Long): Int  {
+private fun minSplit(x: Int): Int  {
 
     var z = x
     val xurda = arrayOf( 1,5,10,20,50 )
@@ -30,7 +30,7 @@ fun main (){
 
     val reader = Scanner(System.`in`)
 
-    val x: Long = reader.nextLong()
+    val x: Int = reader.nextInt()
 
     println(minSplit(x))
 
